@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Q5</title>
+</head>
+<body>
+
+	<h1>연습문제 5번</h1>
+
+	[[${number[0]}]]
+	<br>
+	
+	
+	<th:block th:each="num : ${arr}">
+	
+		<span th:text="${num}"></span>
+		
+	</th:block>
+	<br>
+	
+	
+	<th:block th:each="num : ${arr}">
+		<span th:if="${num%2==0}" th:text="${num}"></span>
+	</th:block>
+	
+
+</body>
+</html>
